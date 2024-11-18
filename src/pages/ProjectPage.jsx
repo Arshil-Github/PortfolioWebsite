@@ -24,7 +24,7 @@ const ProjectPage = () => {
       setMousePos({ x: e.clientX, y: e.clientY });
     });
 
-    fetch("../public/projects.csv")
+    fetch("/projects.csv")
       .then((response) => response.text())
       .then((data) => {
         Papa.parse(data, {
@@ -58,7 +58,7 @@ const ProjectPage = () => {
                 title={project.name}
                 subtitle={project.summary}
                 description={project.description}
-                image={"public/projectImages/" + project.image}
+                image={"/projectImages/" + project.image}
                 mousePosition={mousePos}
                 setCursorVariant={setCursorVariant}
                 onClick={() => {
