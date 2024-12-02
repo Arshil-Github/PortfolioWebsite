@@ -45,8 +45,8 @@ const ProjectPage = () => {
     };
   }, []);
   return (
-    <div className="bg-black flex-grow h-fit p-5 w-full">
-      <div className="flex-grow grid lg:grid-rows-4 lg:grid-cols-4 gap-4 sm:max-h-[100vh] lg:gap-y-[200px]">
+    <div className="bg-black flex-grow p-5 w-full">
+      <div className="flex-grow grid lg:grid-rows-4 lg:grid-cols-4 gap-4 lg:gap-y-4 ">
         {projects.map((project, index) => {
           if (
             projectType == null ||

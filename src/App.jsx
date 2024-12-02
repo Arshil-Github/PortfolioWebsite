@@ -9,7 +9,7 @@ import ControlPanel from "./pages/Administrator/ControlPanel";
 import ExperiencePage from "./pages/ExperiencePage";
 const AppLayout = () => {
   return (
-    <div className="flex flex-col h-screen ">
+    <div className="flex flex-col h-screen">
       <NavigationBar />
       <Outlet />
     </div>

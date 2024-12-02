@@ -18,7 +18,7 @@ const NavigationBar = ({ activeTab }) => {
     );
   }
   return (
-    <motion.div className="sticky top-0 z-20 flex justify-between max-w-[100vw] bg-slate-200 text-white">
+    <motion.div className="sticky top-0 z-50 flex justify-between max-w-[100vw] bg-slate-200 text-white">
       <NavButton navLoc="/">Home</NavButton>
       <NavButton navLoc="/experience">Experience</NavButton>
       <NavButton navLoc="/projects">Projects</NavButton>
